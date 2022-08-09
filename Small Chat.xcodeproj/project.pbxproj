@@ -7,15 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D92364528A2B600002845E1 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92364428A2B600002845E1 /* Chat.swift */; };
+		0D92364728A2C7FA002845E1 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92364628A2C7FA002845E1 /* ChatCell.swift */; };
+		0D92364C28A2E386002845E1 /* ChatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92364A28A2E386002845E1 /* ChatDetailView.swift */; };
+		0D92364D28A2E386002845E1 /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92364B28A2E386002845E1 /* ChatDetailViewController.swift */; };
+		0D92364F28A2F63B002845E1 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92364E28A2F63B002845E1 /* DataBaseManager.swift */; };
+		0D92365128A304AE002845E1 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92365028A304AE002845E1 /* MessageCell.swift */; };
+		0D92365328A3060C002845E1 /* OwnMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92365228A3060C002845E1 /* OwnMessageCell.swift */; };
+		0D92365528A30FF8002845E1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D92365428A30FF8002845E1 /* StringExtension.swift */; };
 		0DC5082A28A1FCE800EB6E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5082928A1FCE800EB6E43 /* AppDelegate.swift */; };
 		0DC5082C28A1FCE800EB6E43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5082B28A1FCE800EB6E43 /* SceneDelegate.swift */; };
 		0DC5082E28A1FCE800EB6E43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5082D28A1FCE800EB6E43 /* ViewController.swift */; };
 		0DC5083128A1FCE800EB6E43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC5082F28A1FCE800EB6E43 /* Main.storyboard */; };
 		0DC5083328A1FCEA00EB6E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC5083228A1FCEA00EB6E43 /* Assets.xcassets */; };
 		0DC5083628A1FCEA00EB6E43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC5083428A1FCEA00EB6E43 /* LaunchScreen.storyboard */; };
+		0DC5083E28A1FEEC00EB6E43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DC5083D28A1FEEC00EB6E43 /* GoogleService-Info.plist */; };
+		0DC5084128A1FFD600EB6E43 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5084028A1FFD600EB6E43 /* FirebaseAnalytics */; };
+		0DC5084328A1FFD600EB6E43 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5084228A1FFD600EB6E43 /* FirebaseAnalyticsSwift */; };
+		0DC5084528A1FFD600EB6E43 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5084428A1FFD600EB6E43 /* FirebaseAuth */; };
+		0DC5084728A1FFD600EB6E43 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5084628A1FFD600EB6E43 /* FirebaseCrashlytics */; };
+		0DC5084928A1FFD600EB6E43 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5084828A1FFD600EB6E43 /* FirebaseDatabase */; };
+		0DC5084B28A1FFD600EB6E43 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5084A28A1FFD600EB6E43 /* FirebaseDatabaseSwift */; };
+		0DC5084D28A1FFD600EB6E43 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5084C28A1FFD600EB6E43 /* FirebaseMessaging */; };
+		0DC5084F28A1FFD600EB6E43 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5084E28A1FFD600EB6E43 /* FirebaseStorage */; };
+		0DC5085328A20E0500EB6E43 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5085228A20E0500EB6E43 /* Session.swift */; };
+		0DC5085828A20FD700EB6E43 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5085728A20FD700EB6E43 /* UIColorExtension.swift */; };
+		0DC5085B28A2101700EB6E43 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5085928A2101700EB6E43 /* LoginView.swift */; };
+		0DC5085C28A2101700EB6E43 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5085A28A2101700EB6E43 /* LoginViewController.swift */; };
+		0DC5086028A210CA00EB6E43 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5085E28A210CA00EB6E43 /* ChatView.swift */; };
+		0DC5086128A210CA00EB6E43 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5085F28A210CA00EB6E43 /* ChatViewController.swift */; };
+		0DC5086328A213E500EB6E43 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5086228A213E500EB6E43 /* UILabelExtension.swift */; };
+		0DC5086528A2144D00EB6E43 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5086428A2144D00EB6E43 /* UIButtonExtension.swift */; };
+		0DC5086728A2938500EB6E43 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5086628A2938500EB6E43 /* UIFontExtension.swift */; };
+		0DC5087028A2964900EB6E43 /* Merriweather-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DC5086828A2964800EB6E43 /* Merriweather-Black.ttf */; };
+		0DC5087128A2964900EB6E43 /* Merriweather-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DC5086928A2964900EB6E43 /* Merriweather-LightItalic.ttf */; };
+		0DC5087228A2964900EB6E43 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DC5086A28A2964900EB6E43 /* Merriweather-Regular.ttf */; };
+		0DC5087328A2964900EB6E43 /* Merriweather-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DC5086B28A2964900EB6E43 /* Merriweather-BlackItalic.ttf */; };
+		0DC5087428A2964900EB6E43 /* Merriweather-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DC5086C28A2964900EB6E43 /* Merriweather-BoldItalic.ttf */; };
+		0DC5087528A2964900EB6E43 /* Merriweather-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DC5086D28A2964900EB6E43 /* Merriweather-Bold.ttf */; };
+		0DC5087628A2964900EB6E43 /* Merriweather-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DC5086E28A2964900EB6E43 /* Merriweather-Italic.ttf */; };
+		0DC5087728A2964900EB6E43 /* Merriweather-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DC5086F28A2964900EB6E43 /* Merriweather-Light.ttf */; };
+		9C9214ECBCE7A072722F2F5F /* Pods_Small_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534FD56E35EE460229F1E807 /* Pods_Small_Chat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D92364428A2B600002845E1 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		0D92364628A2C7FA002845E1 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		0D92364A28A2E386002845E1 /* ChatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailView.swift; sourceTree = "<group>"; };
+		0D92364B28A2E386002845E1 /* ChatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
+		0D92364E28A2F63B002845E1 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		0D92365028A304AE002845E1 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		0D92365228A3060C002845E1 /* OwnMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnMessageCell.swift; sourceTree = "<group>"; };
+		0D92365428A30FF8002845E1 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		0DC5082628A1FCE800EB6E43 /* Small Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Small Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC5082928A1FCE800EB6E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DC5082B28A1FCE800EB6E43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +67,27 @@
 		0DC5083228A1FCEA00EB6E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DC5083528A1FCEA00EB6E43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DC5083728A1FCEA00EB6E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DC5083D28A1FEEC00EB6E43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0DC5085228A20E0500EB6E43 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		0DC5085728A20FD700EB6E43 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		0DC5085928A2101700EB6E43 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0DC5085A28A2101700EB6E43 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0DC5085E28A210CA00EB6E43 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		0DC5085F28A210CA00EB6E43 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		0DC5086228A213E500EB6E43 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		0DC5086428A2144D00EB6E43 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		0DC5086628A2938500EB6E43 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		0DC5086828A2964800EB6E43 /* Merriweather-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Black.ttf"; sourceTree = "<group>"; };
+		0DC5086928A2964900EB6E43 /* Merriweather-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-LightItalic.ttf"; sourceTree = "<group>"; };
+		0DC5086A28A2964900EB6E43 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
+		0DC5086B28A2964900EB6E43 /* Merriweather-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BlackItalic.ttf"; sourceTree = "<group>"; };
+		0DC5086C28A2964900EB6E43 /* Merriweather-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0DC5086D28A2964900EB6E43 /* Merriweather-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.ttf"; sourceTree = "<group>"; };
+		0DC5086E28A2964900EB6E43 /* Merriweather-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Italic.ttf"; sourceTree = "<group>"; };
+		0DC5086F28A2964900EB6E43 /* Merriweather-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Light.ttf"; sourceTree = "<group>"; };
+		22B4F71B6A680C5347D5BF27 /* Pods-Small Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Small Chat.release.xcconfig"; path = "Target Support Files/Pods-Small Chat/Pods-Small Chat.release.xcconfig"; sourceTree = "<group>"; };
+		534FD56E35EE460229F1E807 /* Pods_Small_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Small_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4F8DB29E8DFC05622778AB /* Pods-Small Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Small Chat.debug.xcconfig"; path = "Target Support Files/Pods-Small Chat/Pods-Small Chat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +95,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC5084B28A1FFD600EB6E43 /* FirebaseDatabaseSwift in Frameworks */,
+				0DC5084928A1FFD600EB6E43 /* FirebaseDatabase in Frameworks */,
+				0DC5084D28A1FFD600EB6E43 /* FirebaseMessaging in Frameworks */,
+				0DC5084328A1FFD600EB6E43 /* FirebaseAnalyticsSwift in Frameworks */,
+				0DC5084728A1FFD600EB6E43 /* FirebaseCrashlytics in Frameworks */,
+				0DC5084F28A1FFD600EB6E43 /* FirebaseStorage in Frameworks */,
+				0DC5084528A1FFD600EB6E43 /* FirebaseAuth in Frameworks */,
+				0DC5084128A1FFD600EB6E43 /* FirebaseAnalytics in Frameworks */,
+				9C9214ECBCE7A072722F2F5F /* Pods_Small_Chat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		055A8C08E88EAADFBA7DFAF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				534FD56E35EE460229F1E807 /* Pods_Small_Chat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D92364828A2DA32002845E1 /* ChatDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0D92364B28A2E386002845E1 /* ChatDetailViewController.swift */,
+				0D92364A28A2E386002845E1 /* ChatDetailView.swift */,
+				0D92365028A304AE002845E1 /* MessageCell.swift */,
+				0D92365228A3060C002845E1 /* OwnMessageCell.swift */,
+			);
+			path = ChatDetail;
+			sourceTree = "<group>";
+		};
 		0DC5081D28A1FCE800EB6E43 = {
 			isa = PBXGroup;
 			children = (
 				0DC5082828A1FCE800EB6E43 /* Small Chat */,
 				0DC5082728A1FCE800EB6E43 /* Products */,
+				2C0E362F32B46F90717A34F8 /* Pods */,
+				055A8C08E88EAADFBA7DFAF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +153,84 @@
 				0DC5082928A1FCE800EB6E43 /* AppDelegate.swift */,
 				0DC5082B28A1FCE800EB6E43 /* SceneDelegate.swift */,
 				0DC5082D28A1FCE800EB6E43 /* ViewController.swift */,
+				0DC5087828A2964E00EB6E43 /* Fonts */,
+				0DC5085628A20FC800EB6E43 /* Extensions */,
+				0DC5085528A20FC100EB6E43 /* Utils */,
+				0DC5085D28A210B700EB6E43 /* Chat */,
+				0D92364828A2DA32002845E1 /* ChatDetail */,
+				0DC5085428A20F6400EB6E43 /* Login */,
 				0DC5082F28A1FCE800EB6E43 /* Main.storyboard */,
 				0DC5083228A1FCEA00EB6E43 /* Assets.xcassets */,
 				0DC5083428A1FCEA00EB6E43 /* LaunchScreen.storyboard */,
 				0DC5083728A1FCEA00EB6E43 /* Info.plist */,
+				0DC5083D28A1FEEC00EB6E43 /* GoogleService-Info.plist */,
 			);
 			path = "Small Chat";
+			sourceTree = "<group>";
+		};
+		0DC5085428A20F6400EB6E43 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0DC5085A28A2101700EB6E43 /* LoginViewController.swift */,
+				0DC5085928A2101700EB6E43 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0DC5085528A20FC100EB6E43 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0DC5085228A20E0500EB6E43 /* Session.swift */,
+				0D92364428A2B600002845E1 /* Chat.swift */,
+				0D92364E28A2F63B002845E1 /* DataBaseManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0DC5085628A20FC800EB6E43 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0DC5085728A20FD700EB6E43 /* UIColorExtension.swift */,
+				0DC5086628A2938500EB6E43 /* UIFontExtension.swift */,
+				0DC5086228A213E500EB6E43 /* UILabelExtension.swift */,
+				0DC5086428A2144D00EB6E43 /* UIButtonExtension.swift */,
+				0D92365428A30FF8002845E1 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0DC5085D28A210B700EB6E43 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				0DC5085F28A210CA00EB6E43 /* ChatViewController.swift */,
+				0DC5085E28A210CA00EB6E43 /* ChatView.swift */,
+				0D92364628A2C7FA002845E1 /* ChatCell.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		0DC5087828A2964E00EB6E43 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0DC5086A28A2964900EB6E43 /* Merriweather-Regular.ttf */,
+				0DC5086E28A2964900EB6E43 /* Merriweather-Italic.ttf */,
+				0DC5086F28A2964900EB6E43 /* Merriweather-Light.ttf */,
+				0DC5086928A2964900EB6E43 /* Merriweather-LightItalic.ttf */,
+				0DC5086D28A2964900EB6E43 /* Merriweather-Bold.ttf */,
+				0DC5086C28A2964900EB6E43 /* Merriweather-BoldItalic.ttf */,
+				0DC5086828A2964800EB6E43 /* Merriweather-Black.ttf */,
+				0DC5086B28A2964900EB6E43 /* Merriweather-BlackItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2C0E362F32B46F90717A34F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE4F8DB29E8DFC05622778AB /* Pods-Small Chat.debug.xcconfig */,
+				22B4F71B6A680C5347D5BF27 /* Pods-Small Chat.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +240,27 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DC5083A28A1FCEA00EB6E43 /* Build configuration list for PBXNativeTarget "Small Chat" */;
 			buildPhases = (
+				F23FCF2A093C949F1784E414 /* [CP] Check Pods Manifest.lock */,
 				0DC5082228A1FCE800EB6E43 /* Sources */,
 				0DC5082328A1FCE800EB6E43 /* Frameworks */,
 				0DC5082428A1FCE800EB6E43 /* Resources */,
+				26AA1F900B59C03E7518F0D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Small Chat";
+			packageProductDependencies = (
+				0DC5084028A1FFD600EB6E43 /* FirebaseAnalytics */,
+				0DC5084228A1FFD600EB6E43 /* FirebaseAnalyticsSwift */,
+				0DC5084428A1FFD600EB6E43 /* FirebaseAuth */,
+				0DC5084628A1FFD600EB6E43 /* FirebaseCrashlytics */,
+				0DC5084828A1FFD600EB6E43 /* FirebaseDatabase */,
+				0DC5084A28A1FFD600EB6E43 /* FirebaseDatabaseSwift */,
+				0DC5084C28A1FFD600EB6E43 /* FirebaseMessaging */,
+				0DC5084E28A1FFD600EB6E43 /* FirebaseStorage */,
+			);
 			productName = "Small Chat";
 			productReference = 0DC5082628A1FCE800EB6E43 /* Small Chat.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +289,9 @@
 				Base,
 			);
 			mainGroup = 0DC5081D28A1FCE800EB6E43;
+			packageReferences = (
+				0DC5083F28A1FFD600EB6E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0DC5082728A1FCE800EB6E43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,21 +307,89 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DC5083628A1FCEA00EB6E43 /* LaunchScreen.storyboard in Resources */,
+				0DC5087028A2964900EB6E43 /* Merriweather-Black.ttf in Resources */,
+				0DC5087528A2964900EB6E43 /* Merriweather-Bold.ttf in Resources */,
+				0DC5087128A2964900EB6E43 /* Merriweather-LightItalic.ttf in Resources */,
+				0DC5083E28A1FEEC00EB6E43 /* GoogleService-Info.plist in Resources */,
+				0DC5087428A2964900EB6E43 /* Merriweather-BoldItalic.ttf in Resources */,
+				0DC5087728A2964900EB6E43 /* Merriweather-Light.ttf in Resources */,
+				0DC5087228A2964900EB6E43 /* Merriweather-Regular.ttf in Resources */,
 				0DC5083328A1FCEA00EB6E43 /* Assets.xcassets in Resources */,
 				0DC5083128A1FCE800EB6E43 /* Main.storyboard in Resources */,
+				0DC5087628A2964900EB6E43 /* Merriweather-Italic.ttf in Resources */,
+				0DC5087328A2964900EB6E43 /* Merriweather-BlackItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26AA1F900B59C03E7518F0D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Small Chat/Pods-Small Chat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Small Chat/Pods-Small Chat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Small Chat/Pods-Small Chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F23FCF2A093C949F1784E414 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Small Chat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0DC5082228A1FCE800EB6E43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D92364528A2B600002845E1 /* Chat.swift in Sources */,
+				0DC5085C28A2101700EB6E43 /* LoginViewController.swift in Sources */,
+				0D92365328A3060C002845E1 /* OwnMessageCell.swift in Sources */,
+				0DC5086528A2144D00EB6E43 /* UIButtonExtension.swift in Sources */,
+				0DC5085B28A2101700EB6E43 /* LoginView.swift in Sources */,
+				0DC5086328A213E500EB6E43 /* UILabelExtension.swift in Sources */,
+				0DC5085328A20E0500EB6E43 /* Session.swift in Sources */,
+				0D92364F28A2F63B002845E1 /* DataBaseManager.swift in Sources */,
 				0DC5082E28A1FCE800EB6E43 /* ViewController.swift in Sources */,
+				0DC5086028A210CA00EB6E43 /* ChatView.swift in Sources */,
+				0DC5085828A20FD700EB6E43 /* UIColorExtension.swift in Sources */,
+				0D92364C28A2E386002845E1 /* ChatDetailView.swift in Sources */,
+				0D92365528A30FF8002845E1 /* StringExtension.swift in Sources */,
 				0DC5082A28A1FCE800EB6E43 /* AppDelegate.swift in Sources */,
+				0D92364D28A2E386002845E1 /* ChatDetailViewController.swift in Sources */,
+				0DC5086128A210CA00EB6E43 /* ChatViewController.swift in Sources */,
+				0D92364728A2C7FA002845E1 /* ChatCell.swift in Sources */,
+				0DC5086728A2938500EB6E43 /* UIFontExtension.swift in Sources */,
 				0DC5082C28A1FCE800EB6E43 /* SceneDelegate.swift in Sources */,
+				0D92365128A304AE002845E1 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +519,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +531,7 @@
 		};
 		0DC5083B28A1FCEA00EB6E43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE4F8DB29E8DFC05622778AB /* Pods-Small Chat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +545,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +561,7 @@
 		};
 		0DC5083C28A1FCEA00EB6E43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B4F71B6A680C5347D5BF27 /* Pods-Small Chat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +575,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +611,60 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0DC5083F28A1FFD600EB6E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0DC5084028A1FFD600EB6E43 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5083F28A1FFD600EB6E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		0DC5084228A1FFD600EB6E43 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5083F28A1FFD600EB6E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		0DC5084428A1FFD600EB6E43 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5083F28A1FFD600EB6E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0DC5084628A1FFD600EB6E43 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5083F28A1FFD600EB6E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		0DC5084828A1FFD600EB6E43 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5083F28A1FFD600EB6E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		0DC5084A28A1FFD600EB6E43 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5083F28A1FFD600EB6E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		0DC5084C28A1FFD600EB6E43 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5083F28A1FFD600EB6E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		0DC5084E28A1FFD600EB6E43 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5083F28A1FFD600EB6E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0DC5081E28A1FCE800EB6E43 /* Project object */;
 }

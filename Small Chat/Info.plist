@@ -2,6 +2,28 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.630837312541-iv0qppe4n0bpbql48d10rtmpnavdbapk</string>
+			</array>
+		</dict>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Merriweather-Regular.ttf</string>
+		<string>Merriweather-Italic.ttf</string>
+		<string>Merriweather-Light.ttf</string>
+		<string>Merriweather-LightItalic.ttf</string>
+		<string>Merriweather-Bold.ttf</string>
+		<string>Merriweather-BoldItalic.ttf</string>
+		<string>Merriweather-Black.ttf</string>
+		<string>Merriweather-BlackItalic.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
