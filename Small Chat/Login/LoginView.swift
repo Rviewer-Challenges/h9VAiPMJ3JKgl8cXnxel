@@ -112,12 +112,17 @@ class LoginView: UIView {
     private func setupUI() {
         backgroundColor = .bgBlue
         
+        let imgLogo: UIImageView = UIImageView(image: UIImage(named: "logo"))
+        imgLogo.translatesAutoresizingMaskIntoConstraints = false
+        imgLogo.contentMode = .scaleAspectFit
+        
         let lblTitle: UILabel = UILabel.with(text: "Small Chat", font: .largeTitle(35), color: .white, alignment: .center)
         
         let lblWelcome: UILabel = UILabel.with(text: "Welcome to Small Chat", font: .title(20), color: .white, alignment: .center)
         
         let lblDescription: UILabel = UILabel.with(text: "The platform where you can message to your friends in a simple way.\n\n We hope you enjoy it 😉", font: .text(), color: .white, alignment: .justified)
         
+        addSubview(imgLogo)
         addSubview(lblTitle)
         addSubview(lblWelcome)
         addSubview(lblDescription)
@@ -127,17 +132,24 @@ class LoginView: UIView {
         bgSignIn.addSubview(btnMail)
         
         NSLayoutConstraint.activate([
-            lblTitle.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 120),
+            
+            imgLogo.widthAnchor.constraint(equalToConstant: 180),
+            imgLogo.centerXAnchor.constraint(equalTo: centerXAnchor),
+            imgLogo.heightAnchor.constraint(equalTo: imgLogo.widthAnchor),
+            imgLogo.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            
+            
+            lblTitle.topAnchor.constraint(equalTo: imgLogo.bottomAnchor, constant: 12),
             lblTitle.centerXAnchor.constraint(equalTo: centerXAnchor),
             
             lblWelcome.topAnchor.constraint(equalTo: lblTitle.bottomAnchor, constant: 24),
             lblWelcome.centerXAnchor.constraint(equalTo: centerXAnchor),
             
-            lblDescription.topAnchor.constraint(equalTo: lblWelcome.bottomAnchor, constant: 4),
+            lblDescription.topAnchor.constraint(equalTo: lblWelcome.bottomAnchor, constant: 12),
             lblDescription.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
             lblDescription.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
             
-            bgSignIn.topAnchor.constraint(equalTo: centerYAnchor),
+            bgSignIn.topAnchor.constraint(equalTo: lblDescription.bottomAnchor, constant: 40),
             bgSignIn.bottomAnchor.constraint(equalTo: bottomAnchor),
             bgSignIn.leadingAnchor.constraint(equalTo: leadingAnchor),
             bgSignIn.trailingAnchor.constraint(equalTo: trailingAnchor),

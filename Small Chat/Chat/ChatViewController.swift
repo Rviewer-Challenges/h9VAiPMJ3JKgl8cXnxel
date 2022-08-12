@@ -17,9 +17,6 @@ class ChatController: UIViewController {
             viewChat?.tableView.reloadData()
         }
     }
-    
-//    let ref: DatabaseReference = DataBaseManager.shared.userChats
-//    var refObservers: [DatabaseHandle] = []
 
     override func loadView() {
         let viewChat: ChatView = ChatView(controller: self)
@@ -33,14 +30,21 @@ class ChatController: UIViewController {
         // Do any additional setup after loading the view.
         title = "Chats"
 //        DataBaseManager.shared.test()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(actionNewMessage))
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.prefersLargeTitles = true
+        tabBarController?.tabBar.isHidden = false
         
         DataBaseManager.shared.observeChats(delegate: self)
+    }
+    
+    @objc func actionNewMessage() {
+        let newChatVC: NewChatController = NewChatController()
+        navigationController?.pushViewController(newChatVC, animated: true)
     }
     
     func goToChat(_ chat: Chat) {

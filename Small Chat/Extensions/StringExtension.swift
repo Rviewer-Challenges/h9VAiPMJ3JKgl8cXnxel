@@ -47,4 +47,16 @@ extension String {
         }
         return ""
     }
+    
+    func firstCharacters() -> String {
+        var capitals: String = ""
+        for (index, sub) in self.split(separator: " ").enumerated() {
+            if index < 2 {
+                capitals = capitals + sub.prefix(1)
+            } else {
+                break
+            }
+        }
+        return capitals.uppercased()
+    }
 }

@@ -44,7 +44,7 @@ class ChatCell: UITableViewCell {
         lblName.numberOfLines = 1
         self.lblName = lblName
         
-        let lblMessage: UILabel = UILabel.with(font: .text(), color: .textColor.withAlphaComponent(0.7))
+        let lblMessage: UILabel = UILabel.with(font: .text(), color: .textColor.withAlphaComponent(0.6))
         lblMessage.numberOfLines = 1
         self.lblMessage = lblMessage
         
@@ -87,24 +87,12 @@ class ChatCell: UITableViewCell {
     func config(chat: Chat) {
         let name: String = chat.currentUser.name
         lblName?.text = name
-        lblID?.text = firstCharacters(of: name)
+        lblID?.text = name.firstCharacters()
         
         if let message: Message = chat.messages.last {
             lblMessage?.text = message.message
             lblDate?.text = message.date.displayDate()
         }
         
-    }
-    
-    private func firstCharacters(of str: String) -> String {
-        var capitals: String = ""
-        for (index, sub) in str.split(separator: " ").enumerated() {
-            if index < 2 {
-                capitals = capitals + sub.prefix(1)
-            } else {
-                break
-            }
-        }
-        return capitals.uppercased()
     }
 }

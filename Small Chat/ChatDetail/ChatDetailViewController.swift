@@ -30,4 +30,9 @@ class ChatDetailController: UIViewController {
         // Do any additional setup after loading the view.
         title = chat.currentUser.name
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
 }

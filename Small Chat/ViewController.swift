@@ -15,17 +15,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        view.backgroundColor = .bgColor
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if Session.shared.isSignedIn {
-            let chatVC: ChatController = ChatController()
-            let navVC: UINavigationController = UINavigationController(rootViewController: chatVC)
-            navVC.modalPresentationStyle = .fullScreen
-            navVC.modalTransitionStyle = .crossDissolve
-//            navVC.navigationBar.isHidden = true
-            present(navVC, animated: true)
+            let tabVC: TabsController = TabsController()
+            tabVC.modalPresentationStyle = .fullScreen
+            tabVC.modalTransitionStyle = .crossDissolve
+            present(tabVC, animated: true)
         } else {
             let loginVC: LoginController = LoginController()
             let navVC: UINavigationController = UINavigationController(rootViewController: loginVC)

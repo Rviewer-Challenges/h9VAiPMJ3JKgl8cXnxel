@@ -9,12 +9,12 @@ import Foundation
 import FirebaseDatabase
 
 final class DataBaseManager {
-    private init() {
-    }
+    private init() {}
     
     public static let shared: DataBaseManager = DataBaseManager()
     
-    let userChats: DatabaseReference = Database.database().reference(withPath: "user-chats")
+    private let userChats: DatabaseReference = Database.database().reference(withPath: "user-chats")
+    private let users: DatabaseReference = Database.database().reference(withPath: "users")
     
     func test() {
         let user1: User = User(email: Session.shared.email, name: Session.shared.name)
@@ -25,6 +25,49 @@ final class DataBaseManager {
         ])
         userChats.setValue([chat.toDict()])
     }
+    
+    // MARK: - Users
+    func insertUser(email: String, name: String) {
+        Session.shared.email = email
+        Session.shared.name = name
+        users.observeSingleEvent(of: .value) { snapshot in
+            let newUser: [String: String] = [
+                "email": email,
+                "name": name
+            ]
+            if var usersCollection: [[String: String]] = snapshot.value as? [[String: String]] {    // <- User Collection Exists
+                var found: Bool = false
+                for user in usersCollection {
+                    if user["email"] == email {
+                        found = true
+                        break
+                    }
+                }
+                if !found {
+                    usersCollection.append(newUser)
+                    self.users.setValue(usersCollection)
+                }
+            } else {    // <- User Collection doesn't exists
+                self.users.setValue([newUser])
+            }
+        }
+    }
+    
+    func getAllUsers(completion: @escaping ([User], DatabaseError?) -> Void) {
+        users.observeSingleEvent(of: .value) { snapshot in
+            guard let value = snapshot.value as? [[String: AnyObject]] else {
+                completion([], .failedFetchUsers)
+                return
+            }
+            var list: [User] = []
+            for dict in value {
+                list.append(User(dict: dict))
+            }
+            completion(list, nil)
+        }
+    }
+    
+    // MARK: - Chats
     
     func observeChats(delegate: ChatDelegate) {
         var chats: [Chat] = []
@@ -44,4 +87,15 @@ final class DataBaseManager {
 
 protocol ChatDelegate: AnyObject {
     func chatsDidChange(_ chats: [Chat])
+}
+
+enum DatabaseError: Error {
+    case failedFetchUsers
+    
+    var localizedDescription: String {
+        switch self {
+        case .failedFetchUsers:
+            return "Error Fetching Users from database"
+        }
+    }
 }

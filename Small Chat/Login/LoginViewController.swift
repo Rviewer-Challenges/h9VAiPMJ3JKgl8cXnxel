@@ -38,15 +38,16 @@ class LoginController: UIViewController {
             }
 
             guard let auth = user?.authentication, let idToken = auth.idToken else { return }
-
+            
             let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: auth.accessToken)
 
             Auth.auth().signIn(with: credential) { authResult, error in
                 if let error = error {
                     print("error: \(error.localizedDescription)")
                 } else {
-                    Session.shared.email = authResult?.user.email ?? ""
-                    Session.shared.name = authResult?.user.displayName ?? ""
+                    let email: String = authResult?.user.email ?? ""
+                    let name: String = authResult?.user.displayName ?? ""
+                    DataBaseManager.shared.insertUser(email: email, name: name)
                 }
             }
             self.dismiss(animated: true)
